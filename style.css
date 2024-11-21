@@ -34,7 +34,7 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 60px;
+    padding: 10px 40px;
     margin: 0 15px;
     font-size: 2em;
     font-weight: 500;
@@ -197,6 +197,9 @@ text-shadow: 3px 3px 5px black; /* Add shadow to h1 */
     top:0;
     position: sticky;
     z-index: 999;  
+     display: flex;
+    justify-content: center;
+    padding: 3px 0;
     }
     nav a {
         font-size: 1em;
@@ -222,7 +225,7 @@ text-shadow: 3px 3px 5px black; /* Add shadow to h1 */
     nav{
     top:0;
     position: sticky;
-    z-index: 999;  
+    z-index: 999;
     }
     nav a {
         font-size: 1.2em;
