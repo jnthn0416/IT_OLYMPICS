@@ -1,0 +1,238 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+/* Section Title Styling */
+section h2 {
+    font-size: 3em;
+    color: blue;
+    margin-bottom: 10px;
+    font-family: Poppins;
+}
+section p {
+    font-size: 1.3em;
+    color: #555;
+    margin: 0 auto 20px;
+    font-family: sans-serif;
+}
+/* Navigation Bar */
+nav {
+    background-color: #16213e;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: sticky;  /* Make the header sticky */
+    top: 0;            /* Stick to the top of the page */
+    z-index: 999;      /* Ensure it stays above other content, but below nav */
+    width: 100%;       /* Ensure it spans the full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for visibility */
+    font-family: Poppins;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 60px;
+    margin: 0 15px;
+    font-size: 2em;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+nav a:hover {
+    background-color: #0f3460;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+/* Home Section */
+.home {
+    color: #fff;
+    padding:  230px 20px;
+    text-align: center;
+    top: 0;
+    font-family: Poppins;
+}
+.home h1 {
+    font-size: 5rem;
+    letter-spacing: 3px;
+    color: yellow;
+    font-family: Poppins;
+    text-shadow: 3px 3px 5px black;
+}
+
+.home p {
+    font-size: 2.5em;
+    margin: 0 auto 30px;
+    color: yellow;
+    font-family: Poppins;
+    text-shadow: 3px 3px 5px black;
+}
+
+.home .cta-button {
+            background-color:#b59410;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .home .cta-button:hover {
+            background-color: #cc5200;
+        }
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+.about_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.about_images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Gallery Section */
+.gallery {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+.gallery .gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+.gallery .gallery-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Contact Us Section */
+.contact-us {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+}
+.contact-form {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+    background: lightgrey;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+.contact-form input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-form textarea {
+    resize: vertical;
+}
+.contact-form select {
+    font-size: 1em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+}
+.contact-form .submit-button {
+    background-color: #e94560;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.contact-form .submit-button:hover {
+    background-color: #d7374f;
+    transform: scale(1.05);
+}
+/* Footer */
+.footer {
+    background-color: #16213e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 400px) {
+    .home h1 {
+        font-size: 2.5rem;
+text-shadow: 3px 3px 5px black; /* Add shadow to h1 */
+    }
+    .home p {
+        font-size: 1.8rem;
+        text-shadow: 3px 3px 5px black; /* Add shadow to h1 */
+    }
+    nav{
+    top:0;
+    position: sticky;
+    z-index: 999;  
+    }
+    nav a {
+        font-size: 1.2em;
+        padding: 5px 8px;
+    }
+    .contact-form {
+        padding: 15px 20px;
+    }
+    .contact-form .submit-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 770px) {
+    .home h1 {
+        font-size: 2.5rem;
+        text-shadow: 3px 3px 5px black); /* Add shadow to h1 */
+    }
+    .home p {
+        font-size: 1.8rem;
+        text-shadow: 3px 3px 5px black; /* Add shadow to h1 */
+    }
+    nav{
+    top:0;
+    position: sticky;
+    z-index: 999;  
+    }
+    nav a {
+        font-size: 1.2em;
+        padding: 5px 8px;
+    }
+    .contact-form {
+        padding: 15px 20px;
+    }
+    .contact-form .submit-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
