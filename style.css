@@ -184,6 +184,33 @@ nav a:hover {
     font-size: 0.9em;
 }
 
+@media (max-width: 430px) {
+    .home h1 {
+        font-size: 2.5rem;
+        text-shadow: 3px 3px 5px black); /* Add shadow to h1 */
+    }
+    .home p {
+        font-size: 1.8rem;
+        text-shadow: 3px 3px 5px black; /* Add shadow to h1 */
+    }
+    nav{
+    top:0;
+    position: sticky;
+    z-index: 1000;
+    }
+    nav a {
+        font-size: 1em;
+        padding: 1px 0px;
+    }
+    .contact-form {
+        padding: 15px 20px;
+    }
+    .contact-form .submit-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
 @media (max-width: 800px) {
     .home h1 {
         font-size: 2.5rem;
